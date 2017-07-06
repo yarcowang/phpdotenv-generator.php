@@ -1,0 +1,21 @@
+{
+    "name": "yarco/phpdotenv-generator",
+    "description": "a tool for managing .env file which is a common config solution from `vlucas/phpdotenv` package",
+    "type": "composer-plugin",
+    "require-dev": {
+        "phpunit/phpunit": "^6.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "Yarco\\PHPDotEnvGenerator\\": "src/"
+        }
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Yarco",
+            "email": "yarco.wang@gmail.com"
+        }
+    ],
+    "require": {}
+}
