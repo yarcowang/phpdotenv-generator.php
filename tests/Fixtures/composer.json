@@ -1,0 +1,27 @@
+{
+  "autoload": {
+    "psr-4": {
+      "Yarco\\PHPDotEnvGenerator\\": "../../src/"
+    }
+  },
+  "repositories": [
+    {"type": "path", "url": "../.."}
+  ],
+  "scripts": {
+    "post-install-cmd": [
+      "Yarco\\PHPDotEnvGenerator\\ScriptHandler::generate"
+    ],
+    "post-update-cmd": [
+      "Yarco\\PHPDotEnvGenerator\\ScriptHandler::generate"
+    ]
+  },
+  "extra": {
+    "phpdotenv-parameters": {
+      "warning": "false",
+      "project": {
+        "source": "./tpl.ini",
+        "dist": "./"
+      }
+    }
+  }
+}
