@@ -15,6 +15,17 @@ if ((!$loader = includeIfExists(__DIR__.'/../vendor/autoload.php')) && (!$loader
     exit(1);
 }
 
+function help()
+{
+    print <<<EOF
+[PHPDOTENV=<ENV>] phpdotenv <PROJECT_DIR1> [<PROJECT_DIR2> ...]\n
+EOF;
+}
+
+if (in_array('-h', $argv)) {
+    help(); exit(0);
+}
+
 use Yarco\PHPDotEnvGenerator\Generator;
 
 array_shift($argv);
